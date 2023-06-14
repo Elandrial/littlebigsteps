@@ -1,0 +1,67 @@
+/*
+Colour Pallet
+- Colour 1: #524fa1
+- Colour 2: #8acfbf
+- Colour 3: #676767
+- Colour 4: #
+- Colour 5: #
+
+- Header Font: 'Open Sans',Helvetica,sans-serif
+- Alternate Font: 'Open Sans',Helvetica,sans-serif
+*/
+
+* {
+    font-family: 'Open Sans',Helvetica,sans-serif;
+}
+/* Components */
+.split-content{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr)
+}
+
+.background-primary {
+    background-color: #524fa1;
+    color:#B9B7BD;
+}
+.background-secondary {
+    background-color: #8acfbf;
+    color: #000;
+}
+.box-shadow{
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+.panel{
+    margin-bottom:20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* End - Components */
+
+/* Banner */
+#banner{
+    height: 600px;
+    background-image: url(../images/banner.webp);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    opacity: 0.5;
+}
+/* End - Banner */
+
+/* Nav */
+nav{
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+}
+#lbs-navbar .nav-item{
+    border-bottom: solid 2px #B9B7BD;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+#lbs-navbar .nav-item:hover{
+    border-color: #524fa1;
+}
+/* End - Nav */
