@@ -43,7 +43,7 @@ a:hover{
 }
 .panel{
     margin-bottom:20px;
-    padding: 10px;
+    padding: 20px;
 }
 .rounded-left{
     border-radius: 20px 0 0 20px;
@@ -58,15 +58,48 @@ a:hover{
     justify-content: flex-end;
 }
 
-.btn-primary{
+/*.btn-primary{
     background-color:#524fa1;
     border-color:#524fa1;
-}
+}*/
 /* End - Components */
 
-/* Detail Card */
-
+/* Details Card*/
 .detail-card{
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
+    background-color: #FFF;
+    color: #000;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+.detail-card div{
+    text-align: left;
+}
+.detail-card time{
+    display:block;
+    margin-bottom: 6px;
+}
+.detail-card img{
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 200px;
+}
+.detail-card figure{
+    padding:10px;
+}
+.detail-card button{
+    font-size: 18px;
+    padding-left:20px;
+    padding-right: 20px;
+}
+/* End - Details Card*/
+
+/* News Card */
+
+.news-card{
     box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
     margin-left: 20px;
     margin-right: 20px;
@@ -75,24 +108,24 @@ a:hover{
     background-color: #FFF;
     color: #000;
 }
-.detail-card img{
+.news-card img{
     width: 100%;
     height: auto;
     /*max-width: 200px;
     max-height: 200px;*/
 }
-.detail-card time{
+.news-card time{
     display:block;
     margin-bottom: 6px;
 }
-.detail-card button{
+.news-card button{
     font-size: 18px;
     padding-left:20px;
     padding-right: 20px;
     display: flex;
     justify-self: right;
 }
-/* End - Detail Card */
+/* End - News Card */
 
 /* Banner */
 #banner{
@@ -119,6 +152,16 @@ nav{
     border-color: #524fa1;
 }
 /* End - Nav */
+
+#who-we-are figure{
+    float:left;
+    max-width: 250px;
+    margin-right: 10px;
+}
+#who-we-are figure img{
+    width: 100%;
+    height: auto;
+}
 
 /* graphs */
 #chart_goals{
