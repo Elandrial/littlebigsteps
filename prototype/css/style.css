@@ -180,6 +180,11 @@ nav{
     margin-left: 10px;
     margin-right: 10px;
 }
+
+/*.charts-css{
+  --color-1: rgba(82,79,161, 0.6);
+  --color-2: rgba(82,79,161, 0.8);
+}*/
 #my-chart .column, #my-chart .bar {
     height: 300px;
     max-width: 600px;
