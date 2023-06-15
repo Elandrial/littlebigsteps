@@ -24,11 +24,6 @@ a:hover{
 }
 
 /* Components */
-.split-content{
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: minmax(0, 1fr)
-}
 
 .background-primary {
     background-color: #524fa1;
@@ -195,6 +190,12 @@ nav{
     #my-chart .column, #my-chart .bar  {
       height: 400px;
       max-width: 800px;
+    }
+    
+    .split-content{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(0, 1fr)
     }
   }
   
