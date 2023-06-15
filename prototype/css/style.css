@@ -185,3 +185,22 @@ nav{
     margin-left: 10px;
     margin-right: 10px;
 }
+#my-chart .column, #my-chart .bar {
+    height: 300px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 600px) {
+    #my-chart .column, #my-chart .bar  {
+      height: 400px;
+      max-width: 800px;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    #my-chart .column, #my-chart .bar  {
+      height: 300px;
+      max-width: 500px;
+    }
+  }
