@@ -55,7 +55,10 @@ a:hover {
   display: flex;
   justify-content: flex-end;
 }
-
+.vertical-progress {
+  margin-top: 100px;
+  transform: rotate(-90deg);
+}
 /*.btn-primary{
     background-color:#524fa1;
     border-color:#524fa1;
@@ -184,10 +187,13 @@ nav {
   margin-right: 10px;
 }
 
-/*.charts-css{
-  --color-1: rgba(82,79,161, 0.6);
-  --color-2: rgba(82,79,161, 0.8);
-}*/
+/* Carousel */
+.carousel img {
+  display: block;
+  height: 200px;
+}
+/* End - Carousel */
+
 #my-chart .column, 
 #my-chart .bar,
 .responsive-chart .column,
@@ -209,6 +215,12 @@ nav {
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: minmax(0, 1fr)
+    }
+  }
+  
+  @media screen and ( min-width: 768px ) {
+    .carousel img {
+      height: 400px;
     }
   }
   
