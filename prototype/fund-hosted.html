@@ -11,7 +11,9 @@
     <link href="libs/fontawesome/css/brands.min.css" rel="stylesheet">
     <link href="libs/fontawesome/css/solid.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/progress-bar.css" type="text/css">
 </head>
 
 <body>
@@ -54,15 +56,87 @@
         </div>
     </nav>
 
-    <section id="banner">
+    <section id="banner"></section>
 
+    <div class="container-fluid">
+        <div class="row">
+            <section id="fundraiser-details" class="col-lg-8 panel">
+                <h2>Colour Run 2023</h2>
+                <time>1st January 2023</time>
+                <p>Hosted by: Person Name</p>
+                <p>Nulla elementum enim ipsum, sed finibus mi pulvinar ut. Proin molestie, ante vitae gravida
+                    pretium,
+                    tellus quam dapibus lacus, nec tristique sapien tortor ut tortor. Nullam tempor purus non ante
+                    pharetra
+                    dapibus. Phasellus lacinia tincidunt sem suscipit varius. Pellentesque finibus, tellus id
+                    pellentesque
+                    suscipit, sem enim congue lacus, in mattis nisi quam vel justo. Aliquam vehicula ultricies
+                    convallis.
+                    Nam rhoncus purus eget nunc rutrum accumsan.</p>
+                <p>Nulla elementum enim ipsum, sed finibus mi pulvinar ut. Proin molestie, ante vitae gravida
+                    pretium,
+                    tellus quam dapibus lacus, nec tristique sapien tortor ut tortor. Nullam tempor purus non ante
+                    pharetra
+                    dapibus. Phasellus lacinia tincidunt sem suscipit varius. Pellentesque finibus, tellus id
+                    pellentesque
+                    suscipit, sem enim congue lacus, in mattis nisi quam vel justo. Aliquam vehicula ultricies
+                    convallis.
+                    Nam rhoncus purus eget nunc rutrum accumsan.</p>
 
-    </section>
-    <section id="main-content">
-        
-    </section>
+                <div class="flex-end">
+                    <a type="button" class="btn btn-primary me-2">Sign Up</a>
+                    <a type="button" class="btn btn-primary">Donate</a>
+                </div>
+            </section>
+            <section id="donation-goals" class="col-lg-4 panel">
+                <h2>Donation Goals</h2>
+                <div class="progress-milestones">
+                    <div class="shell left-side">
+                        <div class="panel-content">
+                            $100,000
+                        </div>
+                    </div>
+                    <div class="shell right-side">
+                        <div class="panel-content">
+                            $75,000
+                        </div>
+                    </div>
+                    <div class="shell left-side">
+                        <div class="panel-content">
+                            $50,000
+                        </div>
+                    </div>
+                    <div class="shell right-side">
+                        <div class="panel-content">
+                            $25,000
+                        </div>
+                    </div>
+                    <div class="shell left-side">
+                        <div class="panel-content">
+
+                        </div>
+                    </div>
+                    <div class="milestone-bar"><span class="sr-only">$76,000 donated</span></div>
+                </div>
+            </section>
+            <section id="fundraiser-gallery" class="col-lg-12 mb-5">
+                <div class="carousel"
+                    data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true }'>
+                    <div class="carousel-cell">
+                        <img src="./images/pexels-photo-1684187.jpeg" alt="Image 1">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./images/pexels-photo-2402777.jpeg" alt="Image 1">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./images/pexels-photo-1209843.jpeg" alt="Image 1">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
     <footer>
-        <div id="contact-details" class="background-secondary box-shadow text-center">
+        <div id="contact-details" class="background-secondary box-shadow text-center py-5">
             <h2>Contact Us</h2>
             <p><a href="mailto:hello@littlebigsteps.org.au">hello@littlebigsteps.org.au</a></p>
             <div id="social-icons">
@@ -92,7 +166,7 @@
         crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    <!--script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script-->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
 
