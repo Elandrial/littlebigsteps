@@ -44,8 +44,10 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                             aria-expanded="false">Admin</a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="./admin.html">Admin</a></li>
+                            <li><a class="dropdown-item" href="./admin-applications.html">Fundraiser Applications</a>
+                            </li>
                             <li><a class="dropdown-item" href="./admin-options.html">Fundraiser Options</a></li>
                             <li><a class="dropdown-item" href="./admin-host-page.html">Host Page Admin</a></li>
                         </ul>
@@ -56,10 +58,178 @@
     </nav>
     <section id="banner"></section>
     <div class="container-fluid">
-        <section id="how-we-have-helped" class="my-4">
+        <section id="how-we-have-helped" class="row mb-5">
+            <div class="col-lg-8 p-3">
+                <h3>How we have helped</h3>
+                <p>Nam vitae tortor nec purus rhoncus consectetur sed vel nisi. Cras eros justo,
+                    pellentesque non metus non, finibus porta est. Praesent non nisi et ex porta congue sit
+                    amet eu sem. Morbi lacus velit, interdum vel velit eu, porttitor dictum felis. Quisque
+                    gravida gravida augue. Vestibulum iaculis quis nisl nec pharetra. Aliquam non tellus
+                    sollicitudin, rhoncus quam eu, vulputate velit. Ut a odio fermentum, dictum dolor in,
+                    ornare nisl. Suspendisse tincidunt posuere tellus nec dapibus.</p>
+            </div>
+            <div class="col-lg-4 p-3">
+                <img src="images/pexels-photo-2402777.jpeg" alt="Image 2" class="img-fluid" />
+            </div>
+        </section>
+        <section id="statistics" class="row mb-5 ">
+            <div class=" col-lg-6">
+                <section id="chart-kids-helped" class="card text-center p-4 my-2 background-primary box-shadow ">
+                    <h2>Children Helped</h2>
+                    <div class="responsive-chart">
+                        <table class="charts-css column multiple show-labels show-data-on-hover data-spacing-2">
+                            <thead>
+                                <th>Year</th>
+                                <th>Goal</th>
+                                <th>Actual</th>
+                            </thead>
+                            <tr>
+                                <th scope="row">2000</th>
+                                <td style="--size: calc(10 / 25)"><span class="data">10</span></td>
+                                <td style="--size: calc(15 / 25)"><span class="data">15</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2001</th>
+                                <td style="--size: calc(12 / 25)"><span class="data">12</span></td>
+                                <td style="--size: calc(20 / 25)"><span class="data">20</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2002</th>
+                                <td style="--size: calc(15 / 25)"><span class="data">15</span></td>
+                                <td style="--size: calc(18 / 25)"><span class="data">18</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2003</th>
+                                <td style="--size: calc(18 / 25)"><span class="data">18</span></td>
+                                <td style="--size: calc(20 / 25)"><span class="data">20</span></td>
+                            </tr>
+                        </table>
+                        <ul class="charts-css legend legend-circle legend-inline">
+                            <li> Goal </li>
+                            <li> Actual </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class=" col-lg-6">
+                <section id="chart-watches-donated" class="card text-center p-4 my-2 background-primary box-shadow ">
+                    <h2>Watches Donated</h2>
+                    <div class="responsive-chart">
+                        <table class="charts-css column multiple show-labels show-data-on-hover data-spacing-2">
+                            <thead>
+                                <th>Year</th>
+                                <th>Goal</th>
+                                <th>Actual</th>
+                            </thead>
+                            <tr>
+                                <th scope="row">2000</th>
+                                <td style="--size: calc(10 / 25)"><span class="data">10</span></td>
+                                <td style="--size: calc(15 / 25)"><span class="data">15</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2001</th>
+                                <td style="--size: calc(12 / 25)"><span class="data">12</span></td>
+                                <td style="--size: calc(20 / 25)"><span class="data">20</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2002</th>
+                                <td style="--size: calc(15 / 25)"><span class="data">15</span></td>
+                                <td style="--size: calc(18 / 25)"><span class="data">18</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2003</th>
+                                <td style="--size: calc(18 / 25)"><span class="data">18</span></td>
+                                <td style="--size: calc(20 / 25)"><span class="data">20</span></td>
+                            </tr>
+                        </table>
+                        <ul class="charts-css legend legend-circle legend-inline">
+                            <li> Goal </li>
+                            <li> Actual </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class=" col-lg-6">
+                <section id="chart-research-funded" class="card text-center p-4 my-2 background-primary box-shadow ">
+                    <h2>Research Funded</h2>
+                    <div class="responsive-chart">
+                        <table class="charts-css column multiple show-labels show-data-on-hover data-spacing-2">
+                            <thead>
+                                <th>Year</th>
+                                <th>Goal</th>
+                                <th>Actual</th>
+                            </thead>
+                            <tr>
+                                <th scope="row">2000</th>
+                                <td style="--size: calc(10 / 25)"><span class="data">10</span></td>
+                                <td style="--size: calc(15 / 25)"><span class="data">15</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2001</th>
+                                <td style="--size: calc(12 / 25)"><span class="data">12</span></td>
+                                <td style="--size: calc(20 / 25)"><span class="data">20</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2002</th>
+                                <td style="--size: calc(15 / 25)"><span class="data">15</span></td>
+                                <td style="--size: calc(18 / 25)"><span class="data">18</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2003</th>
+                                <td style="--size: calc(18 / 25)"><span class="data">18</span></td>
+                                <td style="--size: calc(20 / 25)"><span class="data">20</span></td>
+                            </tr>
+                        </table>
+                        <ul class="charts-css legend legend-circle legend-inline">
+                            <li> Goal </li>
+                            <li> Actual </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class=" col-lg-6">
+                <section id="chart-hospitals-upgraded" class="card text-center p-4 my-2 background-primary box-shadow ">
+                    <h2>Hospitals Upgraded</h2>
+                    <div class="responsive-chart">
+                        <table class="charts-css column multiple show-labels show-data-on-hover data-spacing-2">
+                            <thead>
+                                <th>Year</th>
+                                <th>Goal</th>
+                                <th>Actual</th>
+                            </thead>
+                            <tr>
+                                <th scope="row">2000</th>
+                                <td style="--size: calc(10 / 25)"><span class="data">10</span></td>
+                                <td style="--size: calc(15 / 25)"><span class="data">15</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2001</th>
+                                <td style="--size: calc(12 / 25)"><span class="data">12</span></td>
+                                <td style="--size: calc(20 / 25)"><span class="data">20</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2002</th>
+                                <td style="--size: calc(15 / 25)"><span class="data">15</span></td>
+                                <td style="--size: calc(18 / 25)"><span class="data">18</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2003</th>
+                                <td style="--size: calc(18 / 25)"><span class="data">18</span></td>
+                                <td style="--size: calc(20 / 25)"><span class="data">20</span></td>
+                            </tr>
+                        </table>
+                        <ul class="charts-css legend legend-circle legend-inline">
+                            <li> Goal </li>
+                            <li> Actual </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="distribution" class=" py-4 my-5 px-lg-4">
             <div class="row">
-                <div class="col-lg-8 panel">
-                    <h3>How we have helped</h3>
+                <div class="col-lg-10">
+                    <h3>Distribution of Donations</h3>
                     <p>Nam vitae tortor nec purus rhoncus consectetur sed vel nisi. Cras eros justo,
                         pellentesque non metus non, finibus porta est. Praesent non nisi et ex porta congue sit
                         amet eu sem. Morbi lacus velit, interdum vel velit eu, porttitor dictum felis. Quisque
@@ -67,179 +237,11 @@
                         sollicitudin, rhoncus quam eu, vulputate velit. Ut a odio fermentum, dictum dolor in,
                         ornare nisl. Suspendisse tincidunt posuere tellus nec dapibus.</p>
                 </div>
-                <figure class="col-lg-4 panel">
-                    <img src="images/pexels-photo-2402777.jpeg" alt="Image 2" class="img-fluid" />
+                <figure class="col-lg-2 text-center">
+                    <img src="images/pie-chart.png" alt="Distribution Pie">
                 </figure>
             </div>
         </section>
-    </div>
-    <section id="statistics">
-        <div class="split-content">
-            <section id="chart-kids-helped" class="panel background-primary box-shadow text-center py-4 my-4">
-                <h2>Children Helped</h2>
-                <div class="responsive-chart">
-                    <table class="charts-css column multiple show-labels show-data-on-hover data-spacing-2">
-                        <thead>
-                            <th>Year</th>
-                            <th>Goal</th>
-                            <th>Actual</th>
-                        </thead>
-                        <tr>
-                            <th scope="row">2000</th>
-                            <td style="--size: calc(10 / 25)"><span class="data">10</span></td>
-                            <td style="--size: calc(15 / 25)"><span class="data">15</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2001</th>
-                            <td style="--size: calc(12 / 25)"><span class="data">12</span></td>
-                            <td style="--size: calc(20 / 25)"><span class="data">20</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2002</th>
-                            <td style="--size: calc(15 / 25)"><span class="data">15</span></td>
-                            <td style="--size: calc(18 / 25)"><span class="data">18</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2003</th>
-                            <td style="--size: calc(18 / 25)"><span class="data">18</span></td>
-                            <td style="--size: calc(20 / 25)"><span class="data">20</span></td>
-                        </tr>
-                    </table>
-                    <ul class="charts-css legend legend-circle legend-inline">
-                        <li> Goal </li>
-                        <li> Actual </li>
-                    </ul>
-                </div>
-            </section>
-            <section id="chart-watches-donated" class="panel background-primary box-shadow text-center py-4 my-4">
-                <h2>Watches Donated</h2>
-                <div class="responsive-chart">
-                    <table class="charts-css column multiple show-labels show-data-on-hover data-spacing-2">
-                        <thead>
-                            <th>Year</th>
-                            <th>Goal</th>
-                            <th>Actual</th>
-                        </thead>
-                        <tr>
-                            <th scope="row">2000</th>
-                            <td style="--size: calc(10 / 25)"><span class="data">10</span></td>
-                            <td style="--size: calc(15 / 25)"><span class="data">15</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2001</th>
-                            <td style="--size: calc(12 / 25)"><span class="data">12</span></td>
-                            <td style="--size: calc(20 / 25)"><span class="data">20</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2002</th>
-                            <td style="--size: calc(15 / 25)"><span class="data">15</span></td>
-                            <td style="--size: calc(18 / 25)"><span class="data">18</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2003</th>
-                            <td style="--size: calc(18 / 25)"><span class="data">18</span></td>
-                            <td style="--size: calc(20 / 25)"><span class="data">20</span></td>
-                        </tr>
-                    </table>
-                    <ul class="charts-css legend legend-circle legend-inline">
-                        <li> Goal </li>
-                        <li> Actual </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <div class="split-content">
-            <section id="chart-research-funded" class="panel background-primary box-shadow text-center py-4 my-4">
-                <h2>Research Funded</h2>
-                <div class="responsive-chart">
-                    <table class="charts-css column multiple show-labels show-data-on-hover data-spacing-2">
-                        <thead>
-                            <th>Year</th>
-                            <th>Goal</th>
-                            <th>Actual</th>
-                        </thead>
-                        <tr>
-                            <th scope="row">2000</th>
-                            <td style="--size: calc(10 / 25)"><span class="data">10</span></td>
-                            <td style="--size: calc(15 / 25)"><span class="data">15</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2001</th>
-                            <td style="--size: calc(12 / 25)"><span class="data">12</span></td>
-                            <td style="--size: calc(20 / 25)"><span class="data">20</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2002</th>
-                            <td style="--size: calc(15 / 25)"><span class="data">15</span></td>
-                            <td style="--size: calc(18 / 25)"><span class="data">18</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2003</th>
-                            <td style="--size: calc(18 / 25)"><span class="data">18</span></td>
-                            <td style="--size: calc(20 / 25)"><span class="data">20</span></td>
-                        </tr>
-                    </table>
-                    <ul class="charts-css legend legend-circle legend-inline">
-                        <li> Goal </li>
-                        <li> Actual </li>
-                    </ul>
-                </div>
-            </section>
-            <section id="chart-hospitals-upgraded" class="panel background-primary box-shadow text-center py-4 my-4">
-                <h2>Hospitals Upgraded</h2>
-                <div class="responsive-chart">
-                    <table class="charts-css column multiple show-labels show-data-on-hover data-spacing-2">
-                        <thead>
-                            <th>Year</th>
-                            <th>Goal</th>
-                            <th>Actual</th>
-                        </thead>
-                        <tr>
-                            <th scope="row">2000</th>
-                            <td style="--size: calc(10 / 25)"><span class="data">10</span></td>
-                            <td style="--size: calc(15 / 25)"><span class="data">15</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2001</th>
-                            <td style="--size: calc(12 / 25)"><span class="data">12</span></td>
-                            <td style="--size: calc(20 / 25)"><span class="data">20</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2002</th>
-                            <td style="--size: calc(15 / 25)"><span class="data">15</span></td>
-                            <td style="--size: calc(18 / 25)"><span class="data">18</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2003</th>
-                            <td style="--size: calc(18 / 25)"><span class="data">18</span></td>
-                            <td style="--size: calc(20 / 25)"><span class="data">20</span></td>
-                        </tr>
-                    </table>
-                    <ul class="charts-css legend legend-circle legend-inline">
-                        <li> Goal </li>
-                        <li> Actual </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <div class="container-fluid">
-            <section id="distribution" class=" py-4 my-4 px-lg-4">
-                <div class="row">
-                    <div class="col-lg-10">
-                        <h3>Distribution of Donations</h3>
-                        <p>Nam vitae tortor nec purus rhoncus consectetur sed vel nisi. Cras eros justo,
-                            pellentesque non metus non, finibus porta est. Praesent non nisi et ex porta congue sit
-                            amet eu sem. Morbi lacus velit, interdum vel velit eu, porttitor dictum felis. Quisque
-                            gravida gravida augue. Vestibulum iaculis quis nisl nec pharetra. Aliquam non tellus
-                            sollicitudin, rhoncus quam eu, vulputate velit. Ut a odio fermentum, dictum dolor in,
-                            ornare nisl. Suspendisse tincidunt posuere tellus nec dapibus.</p>
-                    </div>
-                    <figure class="col-lg-2 text-center">
-                        <img src="images/pie-chart.png" alt="Distribution Pie">
-                    </figure>
-                </div>
-            </section>
-    </section>
     </div>
     <footer>
         <div id="contact-details" class="background-secondary box-shadow text-center py-5">

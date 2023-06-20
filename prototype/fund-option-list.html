@@ -43,8 +43,10 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                             aria-expanded="false">Admin</a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="./admin.html">Admin</a></li>
+                            <li><a class="dropdown-item" href="./admin-applications.html">Fundraiser Applications</a>
+                            </li>
                             <li><a class="dropdown-item" href="./admin-options.html">Fundraiser Options</a></li>
                             <li><a class="dropdown-item" href="./admin-host-page.html">Host Page Admin</a></li>
                         </ul>
@@ -55,27 +57,37 @@
     </nav>
 
     <section id="banner"></section>
-    <section id="fundraise-detail" class="p-5">
-        <h2>Fundraise!</h2>
-        <div class="col-lg-3 float-end mx-2">
-            <img src="./images/pexels-photo-2399097.jpeg" alt="Image primary" class="img-fluid"/> 
-        </div>
-        <p class="clearfix">Phasellus turpis nunc, fringilla eget est eget, tempor tempus magna. Nam et interdum metus, vitae viverra
-            quam. Proin id efficitur lacus, nec interdum dolor. In mauris nisl, egestas ut placerat sed, malesuada non
-            urna. Nulla eu dui lorem. Cras eu orci ut magna semper egestas. Curabitur at sollicitudin quam. Curabitur
-            dignissim, erat nec euismod malesuada, arcu nibh placerat sapien, ac venenatis velit nisl sit amet nulla.
-            Proin ultrices bibendum convallis. Duis sed quam vel eros iaculis sagittis ac in massa. Praesent ornare
-            varius nunc.</p>
-    </section>
-    <section id="fundraise-options" class="panel background-primary box-shadow mt-5">
-        <h2>What options are there?</h2>
-        <article class="detail-card">
-            <div class="container-fluid">
-                <div class="row">
-                    <figure class="col-lg-2 py-3">
-                        <img src="images/pexels-photo-787961.webp" alt="Image 1" class="img-fluid">
-                    </figure>
-                    <div class="col-lg-10 py-3">
+    <div class="container-fluid">
+        <section id="fundraise-detail" class="row">
+            <div class="col-lg-8 p-3 mb-5">
+                <h2>Fundraise!</h2>
+                <p>Phasellus turpis nunc, fringilla eget est eget, tempor tempus magna. Nam et interdum
+                    metus,
+                    vitae viverra
+                    quam. Proin id efficitur lacus, nec interdum dolor. In mauris nisl, egestas ut placerat sed,
+                    malesuada non
+                    urna. Nulla eu dui lorem. Cras eu orci ut magna semper egestas. Curabitur at sollicitudin quam.
+                    Curabitur
+                    dignissim, erat nec euismod malesuada, arcu nibh placerat sapien, ac venenatis velit nisl sit amet
+                    nulla.
+                    Proin ultrices bibendum convallis. Duis sed quam vel eros iaculis sagittis ac in massa. Praesent
+                    ornare
+                    varius nunc.</p>
+            </div>
+            <div class="col-lg-4 p-3 mb-5">
+                <img src="./images/pexels-photo-2399097.jpeg" alt="Image primary" class="img-fluid" />
+            </div>
+        </section>
+        <section id="fundraise-options" class="row background-primary box-shadow mb-5 px-3 pt-3 pb-5">
+            <div class="col-lg-12 p-3">
+                <h2>What options are there?</h2>
+            </div>
+            <div class="col-lg-12">
+                <article class="detail-card row mb-3">
+                    <div class="col-lg-3">
+                        <img src="images/pexels-photo-787961.webp" alt="Image 1" class="img-fluid my-3">
+                    </div>
+                    <div class="col-lg-9 p-3">
                         <h3>Gala</h3>
                         <p>Nulla elementum enim ipsum, sed finibus mi pulvinar ut. Proin molestie, ante vitae
                             gravida pretium, tellus quam dapibus lacus, nec tristique sapien tortor ut tortor.
@@ -83,19 +95,16 @@
                             varius. Pellentesque finibus, tellus id pellentesque suscipit, sem enim congue lacus, in
                             mattis nisi quam vel justo. Aliquam vehicula ultricies convallis. Nam rhoncus purus eget
                             nunc rutrum accumsan.</p>
-                        <div class="flex-end"><a type="button" class="btn btn-primary" href="./fund-option.html">Read
-                                More</a></div>
+                        <div class="text-end">
+                            <a type="button" class="btn btn-primary" href="./fund-option.html">Read More</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </article>
-        <article class="detail-card">
-            <div class="container-fluid">
-                <div class="row">
-                    <figure class="col-lg-2 py-3">
+                </article>
+                <article class="detail-card row mb-3">
+                    <div class="col-lg-3 py-3">
                         <img src="images/pexels-photo-2402777.jpeg" alt="Image 2" class="img-fluid">
-                    </figure>
-                    <div class="col-lg-10 py-3">
+                    </div>
+                    <div class="col-lg-9 py-3">
                         <h3>Fun Run</h3>
                         <p>Nam vitae tortor nec purus rhoncus consectetur sed vel nisi. Cras eros justo,
                             pellentesque non metus non, finibus porta est. Praesent non nisi et ex porta congue sit
@@ -103,27 +112,26 @@
                             gravida gravida augue. Vestibulum iaculis quis nisl nec pharetra. Aliquam non tellus
                             sollicitudin, rhoncus quam eu, vulputate velit. Ut a odio fermentum, dictum dolor in,
                             ornare nisl. Suspendisse tincidunt posuere tellus nec dapibus.</p>
-                        <div class="flex-end"><a type="button" class="btn btn-primary" href="./fund-option.html">Read
-                                More</a></div>
+                        <div class="text-end"><a type="button" class="btn btn-primary" href="./fund-option.html">Read
+                                More</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </article>
-        <article class="detail-card">
-            <div class="container-fluid">
-                <div class="row">
-                    <figure class="col-lg-2 py-3">
+                </article>
+                <article class="detail-card row mb-3">
+                    <div class="col-lg-3 py-3">
                         <img src="images/pexels-photo-3184418.jpeg" alt="Image 3" class="img-fluid">
-                    </figure>
-                    <div class="col-lg-10 py-3">
-                        <h3>Something Else?</h3>
-                        <p>Do you have an idea that we haven't incorporated yet? Let us know and we will see if it is something we can add to our options.</p>
-                        <div class="flex-end"><a type="button" class="btn btn-primary" href="mailto:hello@littlebigsteps.org.au">Contact Us</a></div>
                     </div>
-                </div>
+                    <div class="col-lg-9 py-3">
+                        <h3>Something Else?</h3>
+                        <p>Do you have an idea that we haven't incorporated yet? Let us know and we will see if it
+                            is something we can add to our options.</p>
+                        <div class="text-end"><a type="button" class="btn btn-primary"
+                                href="mailto:hello@littlebigsteps.org.au">Contact Us</a></div>
+                    </div>
+                </article>
             </div>
-        </article>
-    </section>
+        </section>
+    </div>
     <footer>
         <div id="contact-details" class="background-secondary box-shadow text-center py-5">
             <h2>Contact Us</h2>

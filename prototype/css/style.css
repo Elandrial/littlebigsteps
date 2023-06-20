@@ -39,64 +39,14 @@ a:hover {
   box-shadow: 0px 0px 20px rgba(82, 79, 161, 0.8);
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-}
-
-.panel {
-  margin-bottom: 20px;
-  padding: 20px;
-}
-
-.rounded-left {
-  border-radius: 20px 0 0 20px;
-  margin-left: 10px;
-}
-
-.rounded-right {
-  border-radius: 0 20px 20px 0;
-  margin-right: 10px;
-}
-
-.rounded {
-  border-radius: 20px 20px;
-  margin: 10px 10px;
-}
-
-.flex-start {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-  width: 100%;
-  text-align: center;
-  align-items: center;
-}
-
-.flex-end {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .vertical-progress {
   margin-top: 100px;
   transform: rotate(-90deg);
 }
 
-/*.btn-primary{
-    background-color:#524fa1;
-    border-color:#524fa1;
-}*/
-/* End - Components */
-
 /* Details Card*/
 .detail-card {
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  padding-bottom: 5px;
 }
 
 .background-primary .detail-card {
@@ -104,66 +54,24 @@ a:hover {
   color: #000;
 }
 
-/*
-.detail-card div {
-  text-align: left;
-}*/
 .detail-card time {
   display: block;
   margin-bottom: 6px;
 }
-
-.detail-card img {
-  width: 100%;
-  height: auto;
-  max-width: 300px;
-  max-height: 200px;
-}
-
-.detail-card figure {
-  padding: 10px;
-}
-
-.detail-card button {
-  font-size: 18px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 /* End - Details Card*/
 
 /* News Card */
-
 .news-card {
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
   padding: 10px;
   background-color: #fff;
   color: #000;
-}
-
-.news-card img {
-  width: 100%;
-  height: auto;
-  /*max-width: 200px;
-    max-height: 200px;*/
 }
 
 .news-card time {
   display: block;
   margin-bottom: 6px;
 }
-
-.news-card button {
-  font-size: 18px;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: flex;
-  justify-self: right;
-}
-
 /* End - News Card */
 
 /* Banner */
@@ -256,11 +164,11 @@ nav {
     max-width: 800px;
   }
 
-  .split-content {
+  /*.split-content {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: minmax(0, 1fr)
-  }
+  }*/
 }
 
 @media screen and (min-width: 768px) {
@@ -287,4 +195,16 @@ nav {
 #application-list,
 #application-list-2 {
   font-size: 1.1rem;
+}
+
+.donate-label {
+  flex: 1 1 auto;
+}
+
+#donate-form .input-group-text {
+  border-color: #8acfbf;
+}
+
+#donate-form div.input-group-text {
+  background-color: #8acfbf;
 }
