@@ -68,16 +68,18 @@ a:hover {
 /* Details Card*/
 .detail-card {
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  color: #000;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
   padding-bottom: 5px;
 }
+.background-primary .detail-card{
+  background-color: #fff;
+  color: #000;
+}/*
 .detail-card div {
   text-align: left;
-}
+}*/
 .detail-card time {
   display: block;
   margin-bottom: 6px;
