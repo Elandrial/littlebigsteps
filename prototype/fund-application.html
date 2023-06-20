@@ -54,15 +54,58 @@
         </div>
     </nav>
 
-    <section id="banner">
-
-
+    <section id="banner"></section>
+    <section id="fundraise-detail" class="p-5">
+        <h2>Lets get your application started</h2>
+        <div class="col-lg-3 float-end mx-2">
+            <img src="./images/pexels-photo-7551442.jpeg" alt="Image primary" class="img-fluid" />
+        </div>
+        <p class="clearfix">Phasellus turpis nunc, fringilla eget est eget, tempor tempus magna. Nam et interdum metus,
+            vitae viverra
+            quam. Proin id efficitur lacus, nec interdum dolor. In mauris nisl, egestas ut placerat sed, malesuada non
+            urna. Nulla eu dui lorem. Cras eu orci ut magna semper egestas. Curabitur at sollicitudin quam. Curabitur
+            dignissim, erat nec euismod malesuada, arcu nibh placerat sapien, ac venenatis velit nisl sit amet nulla.
+            Proin ultrices bibendum convallis. Duis sed quam vel eros iaculis sagittis ac in massa. Praesent ornare
+            varius nunc.</p>
     </section>
-    <section id="main-content">
-        
+    <section id="fundraiser-application" class="p-5 background-primary">
+        <form>
+            <div class="container">
+                <h2>Fundraiser Application</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="application-name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="application-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="application-about" class="form-label">Tell us a bit about yourself</label>
+                            <textarea class="form-control" id="application-about" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="application-type" class="form-label">Fundraiser Type</label>
+                            <select class="form-control" id="application-type">
+                                <option>Gala</option>
+                                <option>Fun Run</option>
+                                <option>Bake Off</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="application-date" class="form-label">Anticipated Event Date</label>
+                            <input type="date" class="form-control" id="application-date">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-end">
+                    <a href="admin-host-page.html" type="button" class="btn btn-primary">Send Application</a>
+                </div>
+            </div>
+        </form>
     </section>
     <footer>
-        <div id="contact-details" class="background-secondary box-shadow text-center">
+        <div id="contact-details" class="background-secondary box-shadow text-center py-5">
             <h2>Contact Us</h2>
             <p><a href="mailto:hello@littlebigsteps.org.au">hello@littlebigsteps.org.au</a></p>
             <div id="social-icons">
