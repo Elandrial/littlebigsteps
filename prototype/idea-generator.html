@@ -12,6 +12,30 @@
     <link href="libs/fontawesome/css/solid.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <title>Tag Input Field</title>
+    <style>
+      .tag-container {
+
+        padding: 5px;
+        display: inline-block;
+      }
+      .tag {
+        background-color: #f2f2f2;
+        color: #000;
+        padding: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        border-radius: 3px;
+        display: inline-block;
+      }
+      .tag-close {
+        cursor: pointer;
+        margin-left: 5px;
+        font-weight: bold;
+      }
+    </style>
+
 </head>
 
 <body>
@@ -58,8 +82,51 @@
 
 
     </section>
-    <section id="main-content">
+    <section id="main-content" class="panel background-primary">
+        <h2>Fundraiser Idea Generator</h2>
+        <div class="tag-container">
+            
+            <div class="tag"></div>
+            <input type="text" id="tag-input" placeholder="Enter a tag" onkeydown="handleKeyDown(event)">
+            <button onclick="generateSentence()">Generate</button>
+          </div>
+          <div id="sentence-output"></div>
+          <script>
+            function handleKeyDown(event) {
+              if (event.key === 'Enter' || event.keyCode === 13) {
+                event.preventDefault();
+                const tagInput = document.getElementById('tag-input');
+                const value = tagInput.value.trim();
+                if (value !== '') {
+                  createTag(value);
+                  tagInput.value = '';
+                }
+              }
+            }
         
+            function createTag(value) {
+                const tagContainer = document.querySelector('.tag-container');
+                const tag = document.createElement('div');
+                tag.classList.add('tag');
+                tag.textContent = value;
+                const closeButton = document.createElement('span');
+                closeButton.classList.add('tag-close');
+                closeButton.textContent = 'x';
+                closeButton.addEventListener('click', function() {
+                    tag.remove();
+                });
+                tag.appendChild(closeButton);
+                tagContainer.insertBefore(tag, tagContainer.firstChild);
+            }
+            
+            function generateSentence() {
+                const tags = document.querySelectorAll('.tag');
+                const words = Array.from(tags).map(tag => tag.textContent.replace('x', ''));
+                const sentenceOutput = document.getElementById('sentence-output');
+                sentenceOutput.textContent = `Fundraiser Idea: You could run a charity event that uses ${words[0]} for competition raises money for ${words[1]}, called: Laps for Lives`;
+            }
+
+          </script>
     </section>
     <footer>
         <div id="contact-details" class="background-secondary box-shadow text-center">
